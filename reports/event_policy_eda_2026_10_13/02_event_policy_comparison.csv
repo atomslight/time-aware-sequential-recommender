@@ -1,0 +1,6 @@
+policy,eligible_events,all_events,all_visitors,all_items,visitors_with_at_least_5_events,events_for_visitors_with_at_least_5,items_after_user_minimum,user_coverage_after_minimum,event_coverage_after_minimum
+all_events,view + addtocart + transaction,2750872,1407557,235035,81484,943099,103822,0.05789037317849295,0.342836380609494
+view_only,view,2663191,1404158,234812,76131,862843,102896,0.054218257489541774,0.32398840338526225
+view_and_addtocart,view + addtocart,2732143,1407479,235034,80269,923766,103751,0.05703033579897107,0.33811041369357314
+cart_and_transaction,addtocart + transaction,87681,38856,24244,2221,32076,12799,0.0571597694049825,0.365826119683854
+transaction_only,transaction,18729,11219,10448,238,5629,4175,0.02121401194402353,0.30054994927652307

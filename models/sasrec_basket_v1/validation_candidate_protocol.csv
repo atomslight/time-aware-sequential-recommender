@@ -1,0 +1,2 @@
+evaluation_split,catalogue,catalogue_item_count,positive_rule,negative_rule,ranking_metrics,evaluation_seed,test_set_used
+validation,training-only known items,200978,all known items in the next timestamp basket,100 distinct sampled training-catalogue items; never a true target item,"Recall@10, NDCG@10, Recall@20, NDCG@20",20042,False

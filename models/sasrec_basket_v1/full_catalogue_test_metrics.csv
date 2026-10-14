@@ -1,0 +1,5 @@
+evaluation_protocol,checkpoint_epoch,test_examples,catalogue_items,k,event_hit_rate,multi_positive_recall,ndcg,elapsed_minutes
+full catalogue: all training-known items scored for every test example,15,173786,200978,1,0.3162797923883397,0.3159636948065403,0.3162797923883397,0.31
+full catalogue: all training-known items scored for every test example,15,173786,200978,10,0.44824094000667486,0.44794258467655257,0.381140392308691,0.31
+full catalogue: all training-known items scored for every test example,15,173786,200978,20,0.4772593879829215,0.4769878856753806,0.3884917859969776,0.31
+full catalogue: all training-known items scored for every test example,15,173786,200978,50,0.5148803701103656,0.5145858510548939,0.3959820266889052,0.31

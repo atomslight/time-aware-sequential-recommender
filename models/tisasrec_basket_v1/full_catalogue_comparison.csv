@@ -1,0 +1,13 @@
+model,evaluation_protocol,checkpoint_epoch,test_examples,catalogue_items,k,event_hit_rate,multi_positive_recall,ndcg,elapsed_seconds
+popularity,full catalogue: every training-known item scored for every test example,,173786,200978,1,0.0001956429171509788,0.0001956429171509788,0.0001956429171509788,16.4
+sasrec,full catalogue: every training-known item scored for every test example,15,173786,200978,1,0.3162797923883397,0.3159636948065403,0.3162797923883397,
+tisasrec,full catalogue: every training-known item scored for every test example,15,173786,200978,1,0.3241457884984982,0.32381789478207484,0.3241457884984982,26.39
+popularity,full catalogue: every training-known item scored for every test example,,173786,200978,10,0.004574591739265534,0.0045448616881298455,0.002103578395148908,16.4
+sasrec,full catalogue: every training-known item scored for every test example,15,173786,200978,10,0.4482409400066748,0.4479425846765525,0.381140392308691,
+tisasrec,full catalogue: every training-known item scored for every test example,15,173786,200978,10,0.45840861749508016,0.4581226336891956,0.3897827790886026,26.39
+popularity,full catalogue: every training-known item scored for every test example,,173786,200978,20,0.008360857606481534,0.008326332385807832,0.003043326509232339,16.4
+sasrec,full catalogue: every training-known item scored for every test example,15,173786,200978,20,0.4772593879829215,0.4769878856753806,0.3884917859969776,
+tisasrec,full catalogue: every training-known item scored for every test example,15,173786,200978,20,0.4896942216288999,0.48943125461484727,0.397708902721961,26.39
+popularity,full catalogue: every training-known item scored for every test example,,173786,200978,50,0.019167251677350304,0.019109709642894133,0.005180434830656119,16.4
+sasrec,full catalogue: every training-known item scored for every test example,15,173786,200978,50,0.5148803701103656,0.5145858510548939,0.3959820266889052,
+tisasrec,full catalogue: every training-known item scored for every test example,15,173786,200978,50,0.5283797313937831,0.528122998048912,0.40542056079168365,26.39

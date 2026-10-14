@@ -1,0 +1,2 @@
+created_utc,input_file,input_rows,min_user_interactions,min_item_interactions
+2026-10-13T16:08:23.302717+00:00,data\interim\notebook_run_2026_10_13\events_clean_for_next_steps.csv,2750872,5,5

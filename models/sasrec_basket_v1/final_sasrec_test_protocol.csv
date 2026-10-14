@@ -1,0 +1,2 @@
+evaluation_split,test_examples,catalogue,catalogue_item_count,positive_rule,negative_rule,metrics,evaluation_seed,selected_model_epoch,test_item_known_coverage_percent
+test,173786,training-only known items,200978,all known items in the next timestamp basket,100 distinct sampled training-catalogue items; never a target item,"Recall@10, NDCG@10, Recall@20, NDCG@20",30042,15,89.18

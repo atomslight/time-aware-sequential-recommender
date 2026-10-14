@@ -1,0 +1,14 @@
+metric,value
+events,775803
+visitors,65815
+items,35996
+median visitor sequence length,7.0
+p90 visitor sequence length,18.0
+maximum visitor sequence length,7124
+median item interactions,12.0
+p90 item interactions,46.0
+median time gap hours,0.03349194444444444
+p90 time gap hours,22.796827638888942
+p99 time gap hours,723.4550830416667
+first event date UTC,2015-05-03 03:00:40.988000+00:00
+last event date UTC,2015-09-18 02:58:58.914000+00:00

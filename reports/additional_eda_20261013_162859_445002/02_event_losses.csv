@@ -1,0 +1,10 @@
+step,event,before_count,after_count,removed_count,removed_percent
+raw -> exact_deduplicated,view,2664312,2664218,94,0.0035281153258327103
+raw -> exact_deduplicated,addtocart,69332,68966,366,0.5278947672070616
+raw -> exact_deduplicated,transaction,22457,22457,0,0.0
+exact_deduplicated -> tie_free,view,2664218,2663191,1027,0.038547896606058514
+exact_deduplicated -> tie_free,addtocart,68966,68952,14,0.020299857900994693
+exact_deduplicated -> tie_free,transaction,22457,18729,3728,16.600614507725876
+tie_free -> five_core,view,2663191,718022,1945169,73.03903475191979
+tie_free -> five_core,addtocart,68952,43675,25277,36.65883513168581
+tie_free -> five_core,transaction,18729,14106,4623,24.683645683165146

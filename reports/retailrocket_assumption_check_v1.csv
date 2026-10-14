@@ -1,0 +1,8 @@
+assumption,expected,observed,status,next_action
+Required fields are present,"No blank timestamp, visitorid, event, or itemid.",0 blank required cells.,PASS,Safe to use these four fields for sequence construction.
+Transaction-ID blanks have the expected meaning,Transaction rows have an ID; non-transaction rows can be blank.,"22,457/22,457 transaction rows have an ID; 0 other rows have an ID.",PASS,Keep transactionid blank outside transactions; do not fill it.
+Event names match the documented dataset,"Only view, addtocart, transaction.","addtocart, transaction, view",PASS,Use these three event names in the candidate event-policy comparison.
+Timestamps can order events,Every timestamp is a non-negative number.,Minimum=1430622004384; maximum=1442545187788; invalid=0.,PASS,Use chronological ordering; convert milliseconds to time gaps later.
+Exact copies were removed only in the separate cleaned file,Cleaned file has zero fully identical rows and expected row count.,"raw=2,756,101; cleaned=2,755,641; expected cleaned=2,755,641; duplicate members remaining=0.",PASS,Use the cleaned copy as the next preprocessing input.
+One timestamp is enough to strictly order each visitor's events,No visitor has two events at the exact same timestamp.,"5,686 rows belong to a visitor-and-timestamp tie.",NEEDS_DECISION,Choose and document a deterministic tie policy before creating next-item labels.
+No future information has entered training examples,"No sequences, temporal split, labels, or models have been created yet.",Not applicable yet: data checks only.,PASS,"When examples are built, verify each history timestamp is earlier than its target and split boundary."

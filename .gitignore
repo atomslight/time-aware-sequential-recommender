@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Raw datasets and generated outputs
+dataset/*
+data/interim/
+reports/*.json
+reports/*.parquet
+artifacts/
+mlruns/
+tmp/
+
+# Trained weights and generated numerical arrays (keep these locally).
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+
+# Keep the small source-controlled documentation and placeholder directories.
+!dataset/.gitkeep
+!reports/.gitkeep
+

@@ -1,0 +1,47 @@
+{
+  "retailrocket": {
+    "status": "active_primary",
+    "raw_events_path": "dataset/events.csv",
+    "user_column": "visitorid",
+    "item_column": "itemid",
+    "timestamp_column": "timestamp",
+    "timestamp_unit": "ms",
+    "event_column": "event",
+    "eligible_events": ["view", "addtocart", "transaction"],
+    "preparation_status": "basket_preparation_active; training_protocol_pending",
+    "exact_duplicate_policy": "keep_first_raw_source_row",
+    "time_block_columns": ["visitorid", "timestamp"],
+    "within_block_order": "unordered",
+    "item_membership": "distinct itemid per time block; preserve all retained event rows separately",
+    "eligibility_policy": {
+      "apply_during_preparation": false,
+      "fit_scope": "training_period_only_after_temporal_split",
+      "threshold_and_count_unit": "pending_training_protocol"
+    },
+    "historical_exploratory_policy": {
+      "exclude_timestamp_ties": true,
+      "minimum_events_per_user": 5,
+      "minimum_events_per_item": 5,
+      "fit_scope": "whole_timeline",
+      "status": "superseded_for_main_dataset; retain_for_audit"
+    },
+    "target_definition": "Distinct items in the visitor's next timestamp block, given only strictly earlier blocks; labels not yet constructed.",
+    "prohibited_actions": [
+      "random_row_sampling",
+      "use_of_future_events_in_history_or_features",
+      "inventing_within_block_item_order",
+      "whole_timeline_eligibility_for_a_claimed_leakage_safe_temporal_test",
+      "pooling_with_hm"
+    ]
+  },
+  "hm": {
+    "status": "deferred_secondary",
+    "required_files": ["transactions_train.csv", "articles.csv", "customers.csv"],
+    "excluded_files": ["images"],
+    "time_granularity": "calendar_day",
+    "target_definition": "Items purchased on a user's next active purchase date, given purchases strictly before that date.",
+    "ordering_policy": "Do not invent an order among items bought on the same date.",
+    "comparison_policy": "Report separately; do not compare absolute metrics directly with Retailrocket."
+  }
+}
+

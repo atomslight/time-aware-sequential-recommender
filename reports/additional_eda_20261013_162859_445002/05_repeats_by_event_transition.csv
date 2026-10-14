@@ -1,0 +1,10 @@
+previous_event,event,transitions,same_item_transitions,same_item_percent
+addtocart,addtocart,8469,2560,30.227889951588146
+addtocart,transaction,8478,7833,92.39207360226469
+addtocart,view,24296,9772,40.22061244649325
+transaction,addtocart,304,139,45.723684210526315
+transaction,transaction,1904,99,5.199579831932773
+transaction,view,9411,3746,39.80448411433429
+view,addtocart,33978,28515,83.92194949673318
+view,transaction,3711,2653,71.49016437617892
+view,view,619437,162664,26.259974783553453

@@ -1,0 +1,22 @@
+[project]
+name = "temporalrec"
+version = "0.1.0"
+description = "Leakage-safe benchmark scaffolding for time-aware sequential recommendation."
+requires-python = ">=3.11"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "pandas>=2.2",
+    "torch>=2.11.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
+

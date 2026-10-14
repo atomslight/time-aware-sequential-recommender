@@ -1,0 +1,7 @@
+rule,definition
+Time block,One visitor plus one exact timestamp.
+History,Use only blocks with timestamps strictly earlier than the target block.
+Target,Every distinct item in the target block is a valid positive target.
+Within-block order,"Unknown. Never use source-row order, item ID, or transaction ID to create item order."
+Evaluation implication,Later ranking evaluation must support multiple positive items in one target block.
+Model implication,Later design must represent earlier baskets without fabricating internal item order.

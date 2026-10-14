@@ -1,0 +1,88 @@
+{
+  "run_tag": "basket_prepared_20261013_180506_369663",
+  "created_utc": "2026-10-13T18:05:06.652623+00:00",
+  "status": "prepared data; not yet training-ready",
+  "python_version": "3.13.5",
+  "pandas_version": "3.0.6",
+  "input_sha256": {
+    "dataset\\events.csv": "3745aa83238b1e6d44d8fda209807899f420084398f94ddf745f3cbcfecbf9e7",
+    "data\\interim\\notebook_run_2026_10_13\\events_exact_deduplicated.csv": "662771ef6e600dc13e41748cc7247ce04872d6708c23d7ce67215cb4b486d574",
+    "notebooks\\07_build_basket_dataset.ipynb": "1b98874b5a74b2b0c84a0a23a6a945b0da520470b49b20941a0badb46fa10779",
+    "configs\\datasets.json": "48749bb734fb55750515077be0b00ac14777963350fd47635385a795e69650f1"
+  },
+  "settings": {
+    "eligible_events": [
+      "view",
+      "addtocart",
+      "transaction"
+    ],
+    "exact_duplicates": "keep_first_raw_source_row",
+    "block_key": [
+      "visitorid",
+      "timestamp"
+    ],
+    "block_id_format": "v{visitorid}_t{timestamp}",
+    "within_block_order": "unordered",
+    "item_membership": "distinct itemid per block",
+    "minimum_interaction_filter_applied": false,
+    "split_applied": false,
+    "model_representation": "not yet decided",
+    "seed": null,
+    "hardware_used": "CPU; no GPU training"
+  },
+  "data_directory": "E:\\ALL MCP Servers\\Recommendation\\data\\interim\\basket_prepared_20261013_180506_369663",
+  "report_directory": "E:\\ALL MCP Servers\\Recommendation\\reports\\basket_prepared_20261013_180506_369663",
+  "outputs": [
+    {
+      "path": "E:\\ALL MCP Servers\\Recommendation\\data\\interim\\basket_prepared_20261013_180506_369663\\events_with_blocks.csv",
+      "rows": 2755641,
+      "bytes": 181863536,
+      "fits_excel_worksheet_with_header": false
+    },
+    {
+      "path": "E:\\ALL MCP Servers\\Recommendation\\data\\interim\\basket_prepared_20261013_180506_369663\\block_items.csv",
+      "rows": 2755630,
+      "bytes": 85352989,
+      "fits_excel_worksheet_with_header": false
+    },
+    {
+      "path": "E:\\ALL MCP Servers\\Recommendation\\data\\interim\\basket_prepared_20261013_180506_369663\\block_summary.csv",
+      "rows": 2753015,
+      "bytes": 306712810,
+      "fits_excel_worksheet_with_header": false
+    },
+    {
+      "path": "E:\\ALL MCP Servers\\Recommendation\\reports\\basket_prepared_20261013_180506_369663\\before_after_counts.csv",
+      "rows": 2,
+      "bytes": 138,
+      "fits_excel_worksheet_with_header": true
+    },
+    {
+      "path": "E:\\ALL MCP Servers\\Recommendation\\reports\\basket_prepared_20261013_180506_369663\\block_size_distribution.csv",
+      "rows": 7,
+      "bytes": 104,
+      "fits_excel_worksheet_with_header": true
+    },
+    {
+      "path": "E:\\ALL MCP Servers\\Recommendation\\reports\\basket_prepared_20261013_180506_369663\\all_tied_block_events.csv",
+      "rows": 4769,
+      "bytes": 469782,
+      "fits_excel_worksheet_with_header": true
+    },
+    {
+      "path": "E:\\ALL MCP Servers\\Recommendation\\reports\\basket_prepared_20261013_180506_369663\\block_examples.csv",
+      "rows": 22,
+      "bytes": 2063,
+      "fits_excel_worksheet_with_header": true
+    }
+  ],
+  "elapsed_seconds": 199.55242839999846,
+  "completed_utc": "2026-10-13T18:08:25.920600+00:00",
+  "validation": {
+    "expected_counts": "passed",
+    "source_row_mapping": "passed",
+    "event_and_membership_reconciliation": "passed",
+    "grouping_and_shuffle_examples": "passed",
+    "input_data_unchanged": "passed"
+  }
+}

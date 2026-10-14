@@ -1,0 +1,5 @@
+model,evaluation_protocol,checkpoint_epoch,test_examples,catalogue_items,k,event_hit_rate,multi_positive_recall,ndcg,elapsed_seconds
+tisasrec,full catalogue: every training-known item scored for every test example,15,173786,200978,1,0.3241457884984982,0.32381789478207484,0.3241457884984982,26.39
+tisasrec,full catalogue: every training-known item scored for every test example,15,173786,200978,10,0.45840861749508016,0.4581226336891956,0.3897827790886026,26.39
+tisasrec,full catalogue: every training-known item scored for every test example,15,173786,200978,20,0.4896942216288999,0.48943125461484727,0.397708902721961,26.39
+tisasrec,full catalogue: every training-known item scored for every test example,15,173786,200978,50,0.5283797313937831,0.528122998048912,0.40542056079168365,26.39

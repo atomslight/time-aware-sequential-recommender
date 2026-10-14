@@ -1,0 +1,2 @@
+context_row_index,visitorid,target_timestamp,expected_next_itemids,predicted_next_itemid,predicted_logit_score,top_1_prediction_correct
+0,0,1442004759591,[357564],285930,20.129459,False

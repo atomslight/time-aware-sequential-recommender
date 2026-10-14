@@ -1,0 +1,2 @@
+checkpoint_epoch,test_examples,context_vector_shape,vector_dtype,context_file_size_mb,elapsed_seconds,context_file,metadata_file
+15,173786,"(173786, 64)",float32,42.43,2.77,E:\ALL MCP Servers\Recommendation\models\sasrec_basket_v1\final_sasrec_test_context_vectors.npy,E:\ALL MCP Servers\Recommendation\models\sasrec_basket_v1\final_sasrec_test_context_metadata.csv

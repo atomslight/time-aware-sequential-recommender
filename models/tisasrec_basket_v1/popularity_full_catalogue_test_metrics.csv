@@ -1,0 +1,5 @@
+model,evaluation_protocol,checkpoint_epoch,test_examples,catalogue_items,k,event_hit_rate,multi_positive_recall,ndcg,elapsed_seconds
+popularity,full catalogue: every training-known item scored for every test example,,173786,200978,1,0.0001956429171509788,0.0001956429171509788,0.0001956429171509788,16.4
+popularity,full catalogue: every training-known item scored for every test example,,173786,200978,10,0.004574591739265534,0.0045448616881298455,0.002103578395148908,16.4
+popularity,full catalogue: every training-known item scored for every test example,,173786,200978,20,0.008360857606481534,0.008326332385807832,0.003043326509232339,16.4
+popularity,full catalogue: every training-known item scored for every test example,,173786,200978,50,0.019167251677350304,0.019109709642894133,0.005180434830656119,16.4

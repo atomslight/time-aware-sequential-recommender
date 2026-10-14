@@ -1,0 +1,9 @@
+policy,event_type,event_rows,visitors,items,time_blocks,rows_lost_vs_basket_aware
+current_exclusion,all_events,2750872,1407557,235035,2750872,4769
+current_exclusion,view,2663191,1404158,234812,2663191,1027
+current_exclusion,addtocart,68952,37721,23903,68952,14
+current_exclusion,transaction,18729,11219,10448,18729,3728
+basket_aware,all_events,2755641,1407580,235061,2753015,0
+basket_aware,view,2664218,1404179,234838,2663700,0
+basket_aware,addtocart,68966,37722,23903,68965,0
+basket_aware,transaction,22457,11719,12025,20362,0
